@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Atul Saini</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-dark text-white">
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-black sticky-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Atul</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTACT SECTION -->
+    <section class="container py-5">
+      <div class="text-center mb-5">
+        <h2 class="text-warning">Contact Me</h2>
+        <p class="lead">
+          Let’s connect. Feel free to reach out via email, phone, or the form
+          below.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Contact Details -->
+        <div class="col-md-6">
+          <div class="bg-black rounded p-4 h-100 shadow-sm">
+            <h4 class="mb-4">Reach Me At</h4>
+            <p>
+              <i class="bi bi-envelope text-warning me-2"></i
+              ><a
+                href="mailto:atulsaini.0609@gmail.com"
+                class="text-white text-decoration-none"
+                >atulsaini.0609@gmail.com</a
+              >
+            </p>
+            <p>
+              <i class="bi bi-phone text-warning me-2"></i
+              ><a
+                href="tel:+919996623936"
+                class="text-white text-decoration-none"
+                >+91 99966 23936</a
+              >
+            </p>
+            <p>
+              <i class="bi bi-linkedin text-warning me-2"></i
+              ><a
+                href="https://linkedin.com/in/theatul6"
+                class="text-white text-decoration-none"
+                target="_blank"
+                >linkedin.com/in/theatul6</a
+              >
+            </p>
+            <p><i class="bi bi-geo-alt text-warning me-2"></i>India</p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-md-6">
+          <div class="bg-black rounded p-4 shadow-sm">
+            <h4 class="mb-4">Send a Message</h4>
+            <form
+              action="https://script.google.com/macros/s/AKfycbzSLU-abpf_5_Qewa4KxAH8v9Elta1lp3Zz2xqT5xYg5MkTUkXGnhPRLvp4w1VEGvbNAA/exec"
+              method="POST"
+            >
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control bg-dark text-white border-secondary"
+                  id="name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control bg-dark text-white border-secondary"
+                  id="email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="Subject" class="form-label">Subject</label>
+                <input
+                  type="subject"
+                  name="subject"
+                  class="form-control bg-dark text-white border-secondary"
+                  id="subject"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea
+                  name="message"
+                  class="form-control bg-dark text-white border-secondary"
+                  id="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-outline-warning w-100">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-white py-3 bg-black">
+      <p>&copy; 2025 Atul Saini. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
