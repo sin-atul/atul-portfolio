@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-dark text-white">
+    <div id="browser-warning" style="display:none; text-align:center; padding:50px; font-size:20px; background:#f44336; color:white;">
+    Your browser is outdated. Please update to a modern browser like Chrome, Edge, Firefox, or Safari.
+</div>
+
+    
     <!-- NAVBAR -->
     <nav
       class="navbar navbar-expand-lg navbar-dark bg-black sticky-top shadow-sm"
@@ -158,5 +163,35 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+(function() {
+    // Detect browser and version
+    var ua = navigator.userAgent;
+    var modern = false;
+
+    // Chrome
+    var chrome = ua.match(/Chrome\/(\d+)/);
+    if (chrome && parseInt(chrome[1]) >= 80) modern = true;
+
+    // Edge
+    var edge = ua.match(/Edg\/(\d+)/);
+    if (edge && parseInt(edge[1]) >= 80) modern = true;
+
+    // Firefox
+    var firefox = ua.match(/Firefox\/(\d+)/);
+    if (firefox && parseInt(firefox[1]) >= 75) modern = true;
+
+    // Safari (Mac/iOS)
+    var safari = ua.match(/Version\/(\d+)\.?.*Safari/);
+    if (safari && parseInt(safari[1]) >= 13) modern = true;
+
+    if (!modern) {
+        document.getElementById('browser-warning').style.display = 'block';
+        document.getElementById('site-content').style.display = 'none';
+    }
+})();
+</script>
+
   </body>
 </html>
+
