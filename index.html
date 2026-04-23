@@ -1374,6 +1374,16 @@ function submitForm() {
   document.getElementById('sendBtn').style.display = 'none';
   document.getElementById('formSuccess').style.display = 'block';
 }
+
+
+/* ── SIM CARD ── */
+function toggleSim(header) {
+  const card = header.parentElement;
+  card.classList.toggle("active");
+
+  const expanded = header.getAttribute("aria-expanded") === "true";
+  header.setAttribute("aria-expanded", !expanded);
+}
 </script>
 </body>
 </html>
