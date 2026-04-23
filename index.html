@@ -1031,6 +1031,108 @@ footer {
   </div>
 </section>
 
+    <!-- Job Simulations -->
+    <div style="margin-top:3rem;">
+      <p class="section-label reveal" style="margin-bottom:1.25rem;">Job Simulations</p>
+      <div style="display:flex;flex-direction:column;gap:1rem;">
+
+        <!-- AIG -->
+        <div class="sim-card reveal">
+          <div class="sim-header" onclick="toggleSim(this)" role="button" tabindex="0" aria-expanded="false" onkeypress="if(event.key==='Enter')toggleSim(this)">
+            <div style="display:flex;align-items:center;gap:1rem;">
+              <div class="cert-icon" style="background:rgba(255,94,122,0.1);color:var(--red);min-width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;">
+                <i class="fas fa-shield-halved"></i>
+              </div>
+              <div>
+                <div class="cert-name">Shields Up: Cybersecurity Virtual Experience</div>
+                <div class="cert-issuer">AIG &middot; via Forage</div>
+              </div>
+            </div>
+            <div class="sim-chevron" aria-hidden="true"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="sim-body">
+            <div class="sim-points">
+              <div class="sim-point"><i class="fas fa-check-circle"></i><span>Completed a cybersecurity threat analysis simulation for the Cyber Defense Unit, staying updated on CISA publications.</span></div>
+              <div class="sim-point"><i class="fas fa-check-circle"></i><span>Researched and understood reported vulnerabilities, showcasing analytical skills in cybersecurity.</span></div>
+              <div class="sim-point"><i class="fas fa-check-circle"></i><span>Utilized Python to write an ethical hacking script &mdash; brute forcing decryption keys to avoid ransom payment.</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deloitte -->
+        <div class="sim-card reveal reveal-delay-1">
+          <div class="sim-header" onclick="toggleSim(this)" role="button" tabindex="0" aria-expanded="false" onkeypress="if(event.key==='Enter')toggleSim(this)">
+            <div style="display:flex;align-items:center;gap:1rem;">
+              <div class="cert-icon" style="background:rgba(0,114,255,0.08);color:#0057b8;min-width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;">
+                <i class="fas fa-magnifying-glass-chart"></i>
+              </div>
+              <div>
+                <div class="cert-name">Cybersecurity Virtual Experience</div>
+                <div class="cert-issuer">Deloitte &middot; via Forage</div>
+              </div>
+            </div>
+            <div class="sim-chevron" aria-hidden="true"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="sim-body">
+            <div class="sim-points">
+              <div class="sim-point"><i class="fas fa-check-circle"></i><span>Examined logs from web requests to identify irregularities indicating potential security breaches.</span></div>
+              <div class="sim-point"><i class="fas fa-check-circle"></i><span>Identified automated API abuses and insider threats within simulated enterprise environments.</span></div>
+              <div class="sim-point"><i class="fas fa-check-circle"></i><span>Assessed feasibility of intranet attack vectors and evaluated defensive countermeasures.</span></div>
+              <div class="sim-point"><i class="fas fa-check-circle"></i><span>Applied basic threat analysis techniques to triage and escalate simulated security incidents.</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+<style>
+.sim-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow: hidden;
+  transition: border-color var(--transition);
+}
+.sim-card:hover { border-color: var(--border2); }
+.sim-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.1rem 1.4rem; cursor: pointer; gap: 1rem;
+  user-select: none;
+}
+.sim-chevron {
+  color: var(--text3); font-size: 0.8rem;
+  transition: transform var(--transition); flex-shrink: 0;
+}
+.sim-header.open .sim-chevron { transform: rotate(180deg); }
+.sim-body {
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1), padding 0.3s ease;
+  padding: 0 1.4rem;
+}
+.sim-body.open {
+  max-height: 320px;
+  padding: 0 1.4rem 1.25rem;
+}
+.sim-points { display: flex; flex-direction: column; gap: 10px; border-top: 1px solid var(--border); padding-top: 1rem; }
+.sim-point {
+  display: flex; gap: 10px; align-items: flex-start;
+  font-size: 0.85rem; color: var(--text2); line-height: 1.6;
+}
+.sim-point i { color: var(--accent3); font-size: 0.78rem; margin-top: 3px; flex-shrink: 0; }
+</style>
+
+<script>
+function toggleSim(header) {
+  const body = header.nextElementSibling;
+  const isOpen = body.classList.contains('open');
+  header.classList.toggle('open', !isOpen);
+  body.classList.toggle('open', !isOpen);
+  header.setAttribute('aria-expanded', String(!isOpen));
+}
+</script>
+    </div>
+  </div>
+</section>
+	
 <!-- EXPERIENCE -->
 <section id="experience" aria-label="Work experience">
   <div class="container">
