@@ -1376,13 +1376,13 @@ function submitForm() {
 }
 
 
-/* ── SIM CARD ── */
+/* ── SIM ACCORDION ── */
 function toggleSim(header) {
-  const card = header.parentElement;
-  card.classList.toggle("active");
-
-  const expanded = header.getAttribute("aria-expanded") === "true";
-  header.setAttribute("aria-expanded", !expanded);
+  const body = header.nextElementSibling;
+  const isOpen = body.classList.contains('open');
+  header.classList.toggle('open', !isOpen);
+  body.classList.toggle('open', !isOpen);
+  header.setAttribute('aria-expanded', String(!isOpen));
 }
 </script>
 </body>
