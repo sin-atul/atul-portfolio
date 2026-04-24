@@ -869,6 +869,8 @@ footer {
       <span class="tech-pill">Java</span><span class="tech-pill">Spring Boot</span><span class="tech-pill">Python</span>
       <span class="tech-pill">Node.js</span><span class="tech-pill">React.js</span><span class="tech-pill">SQL</span>
       <span class="tech-pill">Kubernetes</span><span class="tech-pill">Grafana</span><span class="tech-pill">ELK Stack</span>
+      <span class="tech-pill">Risk Assessment</span><span class="tech-pill">Risk Management</span><span class="tech-pill">Burp Suite</span>
+      <span class="tech-pill">Bot detection</span><span class="tech-pill">Browser Fingerprinting</span>
     </div>
   </div>
 </section>
@@ -881,17 +883,35 @@ footer {
     <p class="section-subtitle reveal">Real-world cloud, security, and data engineering solutions built from scratch.</p>
     <div class="projects-filter reveal">
       <button class="filter-btn active" data-filter="all">All Projects</button>
+	  <button class="filter-btn" data-filter="security">Security</button>
       <button class="filter-btn" data-filter="cloud">Cloud</button>
       <button class="filter-btn" data-filter="data">Data</button>
       <button class="filter-btn" data-filter="ml">AI/ML</button>
       <button class="filter-btn" data-filter="java">Java</button>
+      
     </div>
     <div class="projects-grid" id="projectsGrid">
-      <div class="project-card reveal" data-category="cloud">
+      <div class="project-card reveal" data-category="security">
+        <div class="project-top">
+          <div class="project-icon" style="background:var(--green-dim);color:var(--accent3)"><i class="fas fa-shield-halved"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/atul-atul-6" target="_blank" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <h3 class="project-name">AI-Powered Bot Detection System</h3>
+        <p class="project-desc">Real-time behavioral analysis engine that detects automated bots on ticket booking platforms by passively collecting browser signals via an invisible JavaScript collector — zero user friction, no CAPTCHA required. Also includes a Chrome Extension for live session monitoring on a target machine without source code access, demonstrating non-invasive security tooling integration into existing production environments.</p>
+        <div class="project-impact"><i class="fas fa-bolt"></i> Zero-friction detection · No CAPTCHA · Chrome Extension</div>
+        <div class="project-tags">
+          <span class="project-tag">JavaScript</span><span class="project-tag">Chrome Extension</span>
+          <span class="project-tag">Behavioral Analysis</span><span class="project-tag">AI/ML</span>
+          <span class="project-tag">Cybersecurity</span>
+        </div>
+      </div>
+	  <div class="project-card reveal reveal-delay-1" data-category="cloud">
         <div class="project-top">
           <div class="project-icon"><i class="fas fa-cloud"></i></div>
           <div class="project-links">
-            <a href="https://github.com/atul-atul-6" target="_blank" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/sin-atul" target="_blank" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
           </div>
         </div>
         <h3 class="project-name">Serverless Web App – AWS</h3>
@@ -903,11 +923,11 @@ footer {
           <span class="project-tag">IAM</span>
         </div>
       </div>
-      <div class="project-card reveal reveal-delay-1" data-category="data">
+      <div class="project-card reveal reveal-delay-2" data-category="data">
         <div class="project-top">
           <div class="project-icon" style="background:var(--green-dim);color:var(--accent3)"><i class="fas fa-database"></i></div>
           <div class="project-links">
-            <a href="https://github.com/atul-atul-6" target="_blank" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/sin-atul" target="_blank" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
           </div>
         </div>
         <h3 class="project-name">Secure ETL Pipeline – Redshift</h3>
@@ -918,11 +938,11 @@ footer {
           <span class="project-tag">S3</span><span class="project-tag">VPC</span><span class="project-tag">KMS</span>
         </div>
       </div>
-      <div class="project-card reveal reveal-delay-2" data-category="data">
+      <div class="project-card reveal" data-category="data">
         <div class="project-top">
           <div class="project-icon" style="background:rgba(255,181,71,0.12);color:var(--amber)"><i class="fas fa-chart-bar"></i></div>
           <div class="project-links">
-            <a href="https://github.com/atul-atul-6" target="_blank" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/sin-atul" target="_blank" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
           </div>
         </div>
         <h3 class="project-name">Sales Intelligence Dashboard</h3>
@@ -933,11 +953,11 @@ footer {
           <span class="project-tag">Power BI</span><span class="project-tag">SQL</span>
         </div>
       </div>
-      <div class="project-card reveal" data-category="ml">
+      <div class="project-card reveal reveal-delay-1" data-category="ml">
         <div class="project-top">
           <div class="project-icon" style="background:var(--accent2-dim);color:var(--accent2)"><i class="fas fa-robot"></i></div>
           <div class="project-links">
-            <a href="https://github.com/atul-atul-6" target="_blank" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/sin-atul" target="_blank" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
             <a href="#" class="project-link" aria-label="IEEE Paper"><i class="fas fa-file-alt"></i></a>
           </div>
         </div>
@@ -949,11 +969,11 @@ footer {
           <span class="project-tag">IEEE</span><span class="project-tag">Scikit-learn</span>
         </div>
       </div>
-      <div class="project-card reveal reveal-delay-1" data-category="ml">
+      <div class="project-card reveal reveal-delay-2" data-category="ml">
         <div class="project-top">
           <div class="project-icon" style="background:var(--accent-dim);color:var(--accent)"><i class="fas fa-comments"></i></div>
           <div class="project-links">
-            <a href="https://github.com/atul-atul-6" target="_blank" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/sin-atul" target="_blank" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
           </div>
         </div>
         <h3 class="project-name">SRM University Convoy Chatbot</h3>
@@ -964,11 +984,11 @@ footer {
           <span class="project-tag">JavaScript</span><span class="project-tag">REST API</span>
         </div>
       </div>
-      <div class="project-card reveal reveal-delay-2" data-category="java">
+      <div class="project-card reveal reveal-delay-1" data-category="java">
         <div class="project-top">
           <div class="project-icon" style="background:rgba(255,94,122,0.1);color:var(--red)"><i class="fas fa-hotel"></i></div>
           <div class="project-links">
-            <a href="https://github.com/atul-atul-6" target="_blank" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://github.com/sin-atul" target="_blank" class="project-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
           </div>
         </div>
         <h3 class="project-name">Java Desktop Applications</h3>
@@ -979,10 +999,10 @@ footer {
           <span class="project-tag">MySQL</span><span class="project-tag">JDBC</span>
         </div>
       </div>
+      
     </div>
   </div>
 </section>
-
 <!-- CERTIFICATIONS -->
 <section id="certifications" aria-label="Certifications">
   <div class="container">
